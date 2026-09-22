@@ -1,0 +1,60 @@
+{
+  "config": "{\"version\":\"5.57\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU08\",\"version\":\"5.57\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU08",
+            "path": "BaseThemes/CY24SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Página 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "0a0d3b79ba40c6602d66",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"064549e46e2064253062\",\"layouts\":[{\"id\":0,\"position\":{\"x\":506.74772036474167,\"y\":40.851063829787236,\"z\":0,\"width\":494.1033434650456,\"height\":296.65653495440733,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"hundredPercentStackedColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(amostra_evg.carga_horaria)\"},{\"queryRef\":\"Sum(amostra_evg.cod_curso)\"},{\"queryRef\":\"Sum(dim_turma.carga_horaria)\"}],\"Category\":[{\"queryRef\":\"amostra_evg.cod_matricula\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"amostra_evg\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dim_turma\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"carga_horaria\"}},\"Function\":0},\"Name\":\"Sum(amostra_evg.carga_horaria)\",\"NativeReferenceName\":\"Soma de carga_horaria\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"cod_curso\"}},\"Function\":0},\"Name\":\"Sum(amostra_evg.cod_curso)\",\"NativeReferenceName\":\"Soma de cod_curso\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"carga_horaria\"}},\"Function\":0},\"Name\":\"Sum(dim_turma.carga_horaria)\",\"NativeReferenceName\":\"Soma de carga_horaria1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"cod_matricula\"},\"Name\":\"amostra_evg.cod_matricula\",\"NativeReferenceName\":\"cod_matricula\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"carga_horaria\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 296.66,
+          "width": 494.10,
+          "x": 506.75,
+          "y": 40.85,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"83165529a70871137369\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":40.851063829787236,\"z\":1,\"width\":470.7598784194529,\"height\":547.5987841945289,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(amostra_evg.cod_curso)\"}],\"Category\":[{\"queryRef\":\"dim_turma.nome_curso\",\"active\":true}],\"Series\":[{\"queryRef\":\"dim_turma.modalidade_turma\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"amostra_evg\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dim_turma\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"cod_curso\"}},\"Function\":0},\"Name\":\"Sum(amostra_evg.cod_curso)\",\"NativeReferenceName\":\"Soma de cod_curso\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"nome_curso\"},\"Name\":\"dim_turma.nome_curso\",\"NativeReferenceName\":\"nome_curso\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"modalidade_turma\"},\"Name\":\"dim_turma.modalidade_turma\",\"NativeReferenceName\":\"modalidade_turma\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"cod_curso\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 547.60,
+          "width": 470.76,
+          "x": 0.00,
+          "y": 40.85,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"d862d1f9e0a1e905e51d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":444.4984802431611,\"y\":388.0851063829787,\"z\":2,\"width\":546.6261398176292,\"height\":284.98480243161094,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(amostra_evg.idade)\"}],\"Category\":[{\"queryRef\":\"dim_pessoa.sexo\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"amostra_evg\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dim_pessoa\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"idade\"}},\"Function\":0},\"Name\":\"Sum(amostra_evg.idade)\",\"NativeReferenceName\":\"Soma de idade\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"sexo\"},\"Name\":\"dim_pessoa.sexo\",\"NativeReferenceName\":\"sexo\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"idade\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 284.98,
+          "width": 546.63,
+          "x": 444.50,
+          "y": 388.09,
+          "z": 2.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

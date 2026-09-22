@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "bi_evg_modelagem."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "594fda34-2995-4790-971d-ebc38df1e0ea"
+  }
+}
